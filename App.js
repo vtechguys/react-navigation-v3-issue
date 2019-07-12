@@ -7,7 +7,7 @@ import Icon from '@expo/vector-icons/Ionicons';
  *      - Login Button
  *      - Sign Up Button
  *    - AppDrawerNavigator
- *          - Dashboard - DashboardStackNavigator(needed for header and to change the header based on the                     tab)
+ *          - Dashboard - DashboardStackNavigator(needed for header and to change the header based on the tab)
  *            - DashboardTabNavigator
  *              - Tab 1 - FeedStack
  *              - Tab 2 - ProfileStack

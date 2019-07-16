@@ -97,7 +97,11 @@ const FeedStack = createStackNavigator(
             <Icon style={{ paddingLeft: 10 }} onPress={() => navigation.openDrawer()} name="md-menu" size={30} />
           )
         };
-      }
+      },
+      tabBarIcon: ()=>(
+        <Icon name="md-menu" size={20} />
+
+      )
     },
     Detail: {
       screen: Detail
@@ -106,7 +110,8 @@ const FeedStack = createStackNavigator(
   {
     defaultNavigationOptions: {
       gesturesEnabled: false
-    }
+    },
+   
   }
 );
 
@@ -118,9 +123,13 @@ const ProfileStack = createStackNavigator({
         headerTitle: 'Profile',
         headerLeft: (
           <Icon style={{ paddingLeft: 10 }} onPress={() => navigation.openDrawer()} name="md-menu" size={30} />
-        )
+        ),
       };
-    }
+    },
+    tabBarIcon: ()=>(
+      <Icon name="md-menu" size={20} />
+
+    )
   }
 });
 const SettingsStack = createStackNavigator({
@@ -133,7 +142,11 @@ const SettingsStack = createStackNavigator({
           <Icon style={{ paddingLeft: 10 }} onPress={() => navigation.openDrawer()} name="md-menu" size={30} />
         )
       };
-    }
+    },
+    tabBarIcon: ()=>(
+      <Icon name="md-menu" size={20} />
+
+    )
   }
 });
 

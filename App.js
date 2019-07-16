@@ -101,7 +101,8 @@ const FeedStack = createStackNavigator(
       tabBarIcon: ()=>(
         <Icon name="md-menu" size={20} />
 
-      )
+      ),
+      tabBarLabel: "Feed"
     },
     Detail: {
       screen: Detail
@@ -126,8 +127,8 @@ const ProfileStack = createStackNavigator({
         ),
       };
     },
-    tabBarIcon: ()=>(
-      <Icon name="md-menu" size={20} />
+    tabBarIcon: ({tintColor})=>(
+      <Icon name="md-menu" size={20} color = {tintColor} />
 
     )
   }
